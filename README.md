@@ -81,3 +81,11 @@ graph LR
 - 📧 Email: [m.shalash@outlook.de](mailto:m.shalash@outlook.de)
 
 ---
+
+<div align="center">
+
+**⭐ If this project helped you learn AWS, consider giving it a star.**
+
+*Built with ☕, Angular and AWS CodePipeline`*
+
+</div>
