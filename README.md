@@ -12,9 +12,6 @@ This repository contains a sample Angular Calculator application created for the
 
 Whenever code is pushed to the `main` branch of this GitHub repository, AWS CodePipeline automatically triggers a build via AWS CodeBuild and deploys the static files to an Amazon S3 bucket configured for static website hosting.
 
-### 🔗 Live Demo
-You can view the deployed application here: [http://calculator.omlo-dev.click](http://calculator.omlo-dev.click) *(Note: HTTP might be used depending on the S3 setup)*
-
 ---
 
 ## 🏗️ Architecture & CI/CD Flow
@@ -37,3 +34,14 @@ graph LR
     end
     
     S3 -->|Static Website Hosting| User[End User / Browser]
+
+Pipeline Stages:
+Source: AWS CodePipeline detects changes in the GitHub repository and pulls the latest code.
+Build: AWS CodeBuild uses the buildspec.yml file to install dependencies (npm install) and build the Angular application for production (ng build).
+Deploy: The compiled static artifacts are automatically deployed to the Amazon S3 bucket.
+
+🛠️ Tech Stack
+Frontend: Angular
+Source Control: GitHub
+CI/CD: AWS CodePipeline, AWS CodeBuild
+Hosting: Amazon S3 (Static Website Hosting)
