@@ -34,14 +34,50 @@ graph LR
     end
     
     S3 -->|Static Website Hosting| User[End User / Browser]
+```
 
-Pipeline Stages:
-Source: AWS CodePipeline detects changes in the GitHub repository and pulls the latest code.
-Build: AWS CodeBuild uses the buildspec.yml file to install dependencies (npm install) and build the Angular application for production (ng build).
-Deploy: The compiled static artifacts are automatically deployed to the Amazon S3 bucket.
+### Pipeline Stages:
+1. **Source:** AWS CodePipeline detects changes in the GitHub repository and pulls the latest code.
+2. **Build:** AWS CodeBuild uses the `buildspec.yml` file to install dependencies (`npm install`) and build the Angular application for production (`ng build`).
+3. **Deploy:** The compiled static artifacts are automatically deployed to the Amazon S3 bucket.
 
-🛠️ Tech Stack
-Frontend: Angular
-Source Control: GitHub
-CI/CD: AWS CodePipeline, AWS CodeBuild
-Hosting: Amazon S3 (Static Website Hosting)
+---
+
+## 🎯 Learning Outcomes
+
+- Understand the fundamental concepts of CI/CD.
+- Create a CI/CD pipeline using AWS CodePipeline.
+- Create an S3 bucket for static website deployment.
+- Use **GitHub** as the version control system.
+- Use AWS CodeBuild to build an Angular project.
+- Use a `buildspec.yml` file.
+- Integrate automated testing into CodePipeline using CodeBuild.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Angular
+- **Source Control:** GitHub
+- **CI/CD:** AWS CodePipeline, AWS CodeBuild
+- **Hosting:** Amazon S3 (Static Website Hosting)
+
+---
+
+## 🚀 Features
+
+- **Simple Calculator:** Basic arithmetic operations (+, -, *, /).
+- **Automated Deployment:** Zero manual intervention required after pushing code to GitHub.
+- **Version Control:** Fully managed through GitHub.
+
+---
+
+## 👤 Author
+
+**Maher** — Full-Stack Developer
+
+- 🐙 GitHub: [@DeveloperMaher](https://github.com/DeveloperMaher)
+- 💼 LinkedIn: [Maher Shalash](https://www.linkedin.com/in/maher-shalash/)
+- 📧 Email: [m.shalash@outlook.de](mailto:m.shalash@outlook.de)
+
+---
